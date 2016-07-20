@@ -1,3 +1,4 @@
+Truth Value test in comparision
 Following values are considered as False in case of Truth value testing.
 
 None
@@ -13,3 +14,26 @@ Important exception: the Boolean operations or and and always return one of thei
 
 Comprision operators
 >, <, ==, >=, <=, !=, is, is not
+
+Numeric Types
+Plain integers (also just called integers) are implemented using long in C, which gives them at least 32 bits of precision.
+
+Long integers have unlimited precision. Floating point numbers are usually implemented using double in C. (sys.float_info).
+
+Complex numbers have a real and imaginary part, which are each a floating point number.
+To extract these parts from a complex number z, use z.real and z.imag.
+
+Bitwise Operations on Integer Types
+Operation	Result	Notes
+x | y	bitwise or of x and y	 
+x ^ y	bitwise exclusive or of x and y	 
+x & y	bitwise and of x and y	 
+x << n	x shifted left by n bits	(1)(2)
+x >> n	x shifted right by n bits	(1)(3)
+~x	the bits of x inverted	 
+
+Notes:
+
+Negative shift counts are illegal and cause a ValueError to be raised.
+A left shift by n bits is equivalent to multiplication by pow(2, n). A long integer is returned if the result exceeds the range of plain integers.
+A right shift by n bits is equivalent to division by pow(2, n).
