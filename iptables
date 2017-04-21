@@ -1,0 +1,4 @@
+sudo iptables -L -v
+To list all rules currently available in machine.
+
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
